@@ -132,6 +132,10 @@ img {
     margin: 30px 0;
 }
 
+.content-image.left {
+    text-align: left;
+}
+
 .content-image img {
     max-width: 200px;
     width: 100%;
@@ -147,7 +151,21 @@ img {
     margin: 10px 0;
 }
 
+.step-image-left {
+    text-align: left;
+    margin: 10px 0;
+}
+
 .step-image-right img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    /* 高品質な画像表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+}
+
+.step-image-left img {
     max-width: 120px;
     width: 100%;
     height: auto;
@@ -278,8 +296,16 @@ img {
     gap: 20px;
 }
 
+.gas-valve-instruction.left {
+    justify-content: flex-start;
+}
+
 .valve-image {
     text-align: right;
+}
+
+.valve-image.left {
+    text-align: left;
 }
 
 .valve-image img {
