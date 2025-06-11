@@ -461,6 +461,11 @@ img {
     font-size: 0.5em;
 }
 
+/* Indent first line by one Japanese character width */
+.indent-1em {
+    text-indent: 1em;
+}
+
 /* ===== ページトップに戻るボタン ===== */
 .page-top-button {
     position: fixed;
