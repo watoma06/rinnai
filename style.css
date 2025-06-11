@@ -24,10 +24,20 @@
 /* ===== BODY STYLES ===== */
 body {
     font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--text-primary);
     margin: 0;
     padding: 0;
+}
+
+/* Ensure text elements inherit body font size */
+p,
+li,
+blockquote,
+dd,
+dt {
+    font-size: inherit;
 }
 strong {
     font-weight: normal;
