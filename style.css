@@ -30,6 +30,12 @@ body {
     margin: 0;
     padding: 0;
 }
+strong {
+    font-weight: normal;
+}
+.notice-title strong, .notice-content strong {
+    font-weight: bold;
+}
 
 
 /* ===== MAIN CONTENT LAYOUT ===== */
@@ -51,12 +57,12 @@ section {
 
 /* Section Headings */
 section h3 {
-    color: white;
+    color: var(--text-primary);
     font-size: 1.3rem;
     margin-bottom: 25px;
     padding: 0 20px;
     position: relative;
-    background: linear-gradient(to right, #666 0%, #666 60%, rgba(102, 102, 102, 0.8) 75%, rgba(102, 102, 102, 0.5) 85%, rgba(102, 102, 102, 0.2) 95%, transparent 100%);
+    
     /* padding-bottom: 15px; */
     /* border-bottom: 3px solid var(--text-primary); */
     /* text-align: center; */
@@ -65,7 +71,7 @@ section h3 {
 section h2 {
     color: var(--text-primary);
     font-size: 2.4rem;
-    font-weight: bold;
+    font-weight: normal;
     margin: 40px 0 20px 0;
     padding: 20px;
     /* background-color: var(--bg-light-gray); */
@@ -83,7 +89,7 @@ section h4 {
     color: var(--text-primary);
     font-size: 1rem;
     /* margin: 25px 0 15px 0; */
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Section Content */
@@ -205,9 +211,9 @@ img {
     margin: 0 0 15px 0;
     display: block;
     width: 100%;
-    background-color: var(--bg-dark-gray);
-    color: #ffffff;
-    font-weight: bold;
+    background-color: transparent;
+    color: var(--text-primary);
+    font-weight: normal;
 }
 
 .warning p {
@@ -218,7 +224,7 @@ img {
 
 /* Note Elements */
 .note {
-    border: 1px solid var(--border-color);
+    border: none;
     padding: 10px;
     margin: 25px 0;
 }
@@ -226,7 +232,7 @@ img {
 .note h4 {
     color: var(--text-primary);
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* ===== OPERATION STEPS STYLING ===== */
@@ -246,17 +252,9 @@ img {
 }
 
 .step-number {
-    background-color: var(--text-primary);
-    color: var(--bg-white);
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    color: var(--text-primary);
+    font-weight: normal;
     font-size: 1.2rem;
-    flex-shrink: 0;
 }
 
 .operation-step ul {
@@ -328,36 +326,26 @@ img {
 }
 
 .section-header.gray {
-    background-color: #666;
-    color: white;
+    background-color: transparent;
+    color: var(--text-primary);
     position: relative;
-    background: linear-gradient(to right, #666 0%, #666 80%, transparent 100%);
+    
     border-right: none;
 }
 
-.section-header.gray::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(242, 244, 245, 0) 0%, var(--bg-primary) 100%);
-    pointer-events: none;
-}
 
 .section-header.dark-gray {
-    background-color: #333333;
-    color: white;
+    background-color: transparent;
+    color: var(--text-primary);
     margin: 10px 0;
     position: relative;
-    background: linear-gradient(to right, #333333 0%, #333333 60%, rgba(51, 51, 51, 0.8) 75%, rgba(51, 51, 51, 0.5) 85%, rgba(51, 51, 51, 0.2) 95%, transparent 100%);
+    
 }
 
 .section-header h3,
 .section-header h4 {
     margin: 0;
-    color: white;
+    color: var(--text-primary);
 }
 
 /* ===== INFO BOX STYLES ===== */
@@ -409,12 +397,12 @@ img {
 /* ===== NOTICE STYLES ===== */
 /* お知らせタイトル専用スタイル */
 .notice-title {
-    border: 1px solid var(--border-color);
+    border: none;
     padding: 5px 10px;
     margin: 25px 0 15px 0;
     display: block;
     width: 100%;
-    background-color: var(--bg-white);
+    background-color: transparent;
 }
 
 .notice-title h4,
@@ -475,7 +463,7 @@ img {
     width: 50px;
     height: 50px;
     background-color: #333333;
-    border: 2px solid #ccc;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -488,16 +476,16 @@ img {
 
 .page-top-button:hover {
     background-color: #555;
-    border-color: #999;
+    border-color: transparent;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .page-top-button::before {
     content: "↑";
-    color: white;
+    color: var(--text-primary);
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1;
 }
 
