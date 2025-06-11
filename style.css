@@ -26,7 +26,6 @@ body {
     font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    /* background-color: var(--bg-primary); */
     margin: 0;
     padding: 0;
 }
@@ -36,6 +35,16 @@ strong {
 .notice-title strong, .notice-content strong {
     font-weight: bold;
 }
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
 
 
 /* ===== MAIN CONTENT LAYOUT ===== */
@@ -48,11 +57,7 @@ main {
 /* ===== SECTION STYLES ===== */
 /* Content Section */
 section {
-    /* background-color: var(--bg-white); */
     padding: 0px 40px;
-    /* border-radius: 10px; */
-    /* box-shadow: 0 4px 20px var(--shadow-color); */
-    /* border: 1px solid var(--border-color); */
 }
 
 /* Section Headings */
@@ -63,9 +68,6 @@ section h3 {
     padding: 0 20px;
     position: relative;
     
-    /* padding-bottom: 15px; */
-    /* border-bottom: 3px solid var(--text-primary); */
-    /* text-align: center; */
 }
 
 section h2 {
@@ -74,10 +76,6 @@ section h2 {
     font-weight: normal;
     margin: 40px 0 20px 0;
     padding: 20px;
-    /* background-color: var(--bg-light-gray); */
-    /* border-left: 5px solid var(--text-primary); */
-    /* border-radius: 5px; */
-    /* border: 1px solid var(--border-color); */
 }
 
 /* Special styling for the last section before manual end */
@@ -88,7 +86,6 @@ section h2:last-of-type {
 section h4 {
     color: var(--text-primary);
     font-size: 1rem;
-    /* margin: 25px 0 15px 0; */
     font-weight: normal;
 }
 
@@ -125,11 +122,8 @@ img {
     max-width: 100%;
     height: auto;
     margin: 15px 0;
-    /* 画像の補間方法を指定して高品質表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
-    /* border-radius: 5px; */
-    /* border: 1px solid var(--border-color); */
 }
 
 /* Content images */
@@ -146,7 +140,6 @@ img {
     max-width: 200px;
     width: 100%;
     height: auto;
-    /* 高品質な画像表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
 }
@@ -166,7 +159,6 @@ img {
     max-width: 120px;
     width: 100%;
     height: auto;
-    /* 高品質な画像表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
 }
@@ -175,7 +167,6 @@ img {
     max-width: 120px;
     width: 100%;
     height: auto;
-    /* 高品質な画像表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
 }
@@ -195,7 +186,6 @@ img {
 .inline-icon {
     width: 60px;
     vertical-align: middle;
-    /* 高品質な画像表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
 }
@@ -217,7 +207,6 @@ img {
 }
 
 .warning p {
-    /* margin: 0 0 15px 0; */
     line-height: 1.8;
     color: var(--text-primary);
 }
@@ -238,8 +227,6 @@ img {
 /* ===== OPERATION STEPS STYLING ===== */
 .operation-step {
     margin: 25px 0;
-    /* padding: 25px; */
-    /* background-color: var(--bg-white); */
 }
 
 .operation-step h4 {
@@ -263,7 +250,6 @@ img {
 }
 
 .operation-step li {
-    /* margin-bottom: 10px; */
     line-height: 1.7;
     color: var(--text-primary);
 }
@@ -369,7 +355,6 @@ img {
 }
 
 .info-text p {
-    /* margin-bottom: 15px; */
     line-height: 1.8;
     color: var(--text-primary);
 }
@@ -384,7 +369,6 @@ img {
 .info-images img {
     max-width: 90px;
     margin: 0;
-    /* 高品質な画像表示 */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimizeQuality;
 }
@@ -433,10 +417,7 @@ img {
 /* ===== COOKING POINTS STYLES ===== */
 /* 調理のポイント用スタイル - 薄れる効果なし */
 .cooking-points-section {
-    /* border: 1px solid var(--border-color); */
-    /* padding: 20px; */
     margin: 25px 0;
-    /* background-color: var(--bg-white); */
 }
 
 /* ===== UTILITY CLASSES ===== */
