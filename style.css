@@ -372,10 +372,15 @@ img {
 }
 
 .info-images {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: flex-start;
+}
+
+.image-with-caption {
+    text-align: left;
 }
 
 .info-images img {
