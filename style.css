@@ -1,0 +1,514 @@
+/* Monochrome Gas Table Manual Style */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --bg-primary: #f2f4f5;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-light: #666666;
+    --border-color: #cccccc;
+    --bg-white: #ffffff;
+    --bg-light-gray: #f8f9fa;
+    --bg-medium-gray: #e9ecef;
+    --bg-dark-gray: #666666;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY STYLES ===== */
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    /* background-color: var(--bg-primary); */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===== MAIN CONTENT LAYOUT ===== */
+/* Main Content - Single Column Layout */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* ===== SECTION STYLES ===== */
+/* Content Section */
+section {
+    /* background-color: var(--bg-white); */
+    padding: 0px 40px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 20px var(--shadow-color); */
+    /* border: 1px solid var(--border-color); */
+}
+
+/* Section Headings */
+section h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    position: relative;
+    background: linear-gradient(to right, #666 0%, #666 60%, rgba(102, 102, 102, 0.8) 75%, rgba(102, 102, 102, 0.5) 85%, rgba(102, 102, 102, 0.2) 95%, transparent 100%);
+    /* padding-bottom: 15px; */
+    /* border-bottom: 3px solid var(--text-primary); */
+    /* text-align: center; */
+}
+
+section h2 {
+    color: var(--text-primary);
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+    padding: 20px;
+    /* background-color: var(--bg-light-gray); */
+    /* border-left: 5px solid var(--text-primary); */
+    /* border-radius: 5px; */
+    /* border: 1px solid var(--border-color); */
+}
+
+/* Special styling for the last section before manual end */
+section h2:last-of-type {
+    margin-bottom: 30px;
+}
+
+section h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    /* margin: 25px 0 15px 0; */
+    font-weight: bold;
+}
+
+/* Section Content */
+section p {
+    margin-bottom: 0px;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--text-primary);
+}
+
+section ol, section ul {
+    margin: 15px 0 0px 30px;
+}
+
+section li {
+    margin-bottom: 0px;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+section a {
+    color: var(--text-secondary);
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: var(--text-primary);
+}
+
+/* ===== IMAGE STYLES ===== */
+/* General Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    /* 画像の補間方法を指定して高品質表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    /* border-radius: 5px; */
+    /* border: 1px solid var(--border-color); */
+}
+
+/* Content images */
+.content-image {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.content-image img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    /* 高品質な画像表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+}
+
+/* Step image positioning */
+.step-image-right {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.step-image-right img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    /* 高品質な画像表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+}
+
+.step-image-center {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.step-image-center img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+/* Inline icons */
+.inline-icon {
+    width: 60px;
+    vertical-align: middle;
+    /* 高品質な画像表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+}
+
+/* ===== SPECIAL ELEMENT STYLES ===== */
+/* Warning Elements */
+.warning {
+    margin: 25px 0;
+}
+
+.warning h4 {
+    padding: 0px 10px;
+    margin: 0 0 15px 0;
+    display: block;
+    width: 100%;
+    background-color: var(--bg-dark-gray);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.warning p {
+    /* margin: 0 0 15px 0; */
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* Note Elements */
+.note {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin: 25px 0;
+}
+
+.note h4 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ===== OPERATION STEPS STYLING ===== */
+.operation-step {
+    margin: 25px 0;
+    /* padding: 25px; */
+    /* background-color: var(--bg-white); */
+}
+
+.operation-step h4 {
+    margin-bottom: 0;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.step-number {
+    background-color: var(--text-primary);
+    color: var(--bg-white);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.operation-step ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.operation-step li {
+    /* margin-bottom: 10px; */
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* Operation Step Arrow Styling */
+.step-arrow {
+    width: 40px;
+    height: 60px;
+    margin-left: 10px;
+    fill: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.operation-step .step-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== GAS VALVE & GRILL INSTRUCTION LAYOUTS ===== */
+/* Gas valve instruction layout */
+.gas-valve-instruction {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.valve-image {
+    text-align: right;
+}
+
+.valve-image img {
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
+
+.valve-status {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* ===== SECTION HEADER STYLES ===== */
+.section-header {
+    padding: 8px;
+    margin: 20px 0;
+}
+
+.section-header.gray {
+    background-color: #666;
+    color: white;
+    position: relative;
+    background: linear-gradient(to right, #666 0%, #666 80%, transparent 100%);
+    border-right: none;
+}
+
+.section-header.gray::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(242, 244, 245, 0) 0%, var(--bg-primary) 100%);
+    pointer-events: none;
+}
+
+.section-header.dark-gray {
+    background-color: #333333;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    background: linear-gradient(to right, #333333 0%, #333333 60%, rgba(51, 51, 51, 0.8) 75%, rgba(51, 51, 51, 0.5) 85%, rgba(51, 51, 51, 0.2) 95%, transparent 100%);
+}
+
+.section-header h3,
+.section-header h4 {
+    margin: 0;
+    color: white;
+}
+
+/* ===== INFO BOX STYLES ===== */
+.info-box {
+    margin: 25px 0;
+    background-color: var(--bg-white);
+}
+
+.info-box h5 {
+    margin-top: 0;
+}
+
+.info-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text p {
+    /* margin-bottom: 15px; */
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.info-images {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-images img {
+    max-width: 90px;
+    margin: 0;
+    /* 高品質な画像表示 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+}
+
+.image-caption {
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+/* ===== NOTICE STYLES ===== */
+/* お知らせタイトル専用スタイル */
+.notice-title {
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    margin: 25px 0 15px 0;
+    display: block;
+    width: 100%;
+    background-color: var(--bg-white);
+}
+
+.notice-title h4,
+.notice-title h5 {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* お知らせ内容（ボーダーなし） */
+.notice-content {
+    margin: 0 0 25px 0;
+}
+
+.notice-content p,
+.notice-content ul,
+.notice-content li {
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.notice-content ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* ===== COOKING POINTS STYLES ===== */
+/* 調理のポイント用スタイル - 薄れる効果なし */
+.cooking-points-section {
+    /* border: 1px solid var(--border-color); */
+    /* padding: 20px; */
+    margin: 25px 0;
+    /* background-color: var(--bg-white); */
+}
+
+/* ===== UTILITY CLASSES ===== */
+/* Small text */
+.small-text {
+    font-size: 0.9rem;
+}
+
+/* Preparation steps */
+.preparation-steps {
+    margin: 15px 0;
+}
+
+/* Page reference styling */
+.page-ref {
+    font-size: 0.5em;
+}
+
+/* ===== ページトップに戻るボタン ===== */
+.page-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.page-top-button:hover {
+    background-color: #555;
+    border-color: #999;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.page-top-button::before {
+    content: "↑";
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.page-top-button.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    section {
+        padding: 25px 20px;
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    section h3 {
+        font-size: 1.6rem;
+    }
+    
+    section h2 {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+    
+    .operation-step {
+        padding: 15px;
+    }
+}
