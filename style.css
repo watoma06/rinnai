@@ -31,6 +31,11 @@ body {
     padding: 0;
 }
 
+/* Ensure all headings are not bold by default */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 /* Ensure text elements inherit body font size */
 p,
 li,
@@ -208,13 +213,14 @@ img {
     margin: 25px 0;
 }
 
-.warning h4 {
+.warning-title {
     padding: 0px 10px;
     margin: 0 0 15px 0;
     display: block;
     width: 100%;
     background-color: transparent;
     color: var(--text-primary);
+    font-size: 1.1rem;
     font-weight: normal;
 }
 
@@ -230,9 +236,10 @@ img {
     margin: 25px 0;
 }
 
-.note h4 {
+.note-title {
     color: var(--text-primary);
     margin-bottom: 10px;
+    font-size: 1.1rem;
     font-weight: normal;
 }
 
@@ -241,7 +248,8 @@ img {
     margin: 25px 0;
 }
 
-.operation-step h4 {
+.operation-step h4,
+.operation-step .step-header p {
     margin-bottom: 0;
     color: var(--text-primary);
     font-size: 1.1rem;
@@ -312,7 +320,7 @@ img {
 
 .valve-status {
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
 }
 
